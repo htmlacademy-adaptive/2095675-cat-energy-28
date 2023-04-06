@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="">
+      <img class="main-header__logo-image logo-image" src="#" alt="Логотип cat energy.">
+      <!--svg class="main-header__logo-text-image logo-text-image"-->
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
+      <ul class="main-navigation__list menu-list">
+        <li class="menu-list__item menu-list__item--current">
+          <a class="menu-list__link">
+            главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="catalog.html">
+            каталог продукции
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="form.html">
+            подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__description">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="name">ИМЯ:*</label>
+        <input class="form__input" type="text" name="name" id="name" required value="барсик">
+
+        <label class="form__label" for="weight">Вес (кг):*</label>
+        <input class="form__input" type="number" name="weight" id="weight" required value="7">
+
+        <label class="form__label" for="age">Возраст (лет):</label>
+        <input class="form__input" type="number" name="age" id="age" value="7">
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <input class="form__radio" type="radio" name="program" id="slim" value="slim" checked>
+        <label class="form__label" for="slim">похудение</label>
+
+        <input class="form__radio" type="radio" name="program" id="pro" value="pro">
+        <label class="form__label" for="pro">Набор массы</label>
+
+        <input class="form__radio" type="radio" name="program" id="dont-know" value="dont-know">
+        <label class="form__label" for="dont-know">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
+
+        <label class="form__label" for="email">E-mail:*</label>
+        <input class="form__input" type="email" name="email" id="email" required value="kuklachev@gmail.com">
+
+        <label class="form__label" for="tel">Телефон:*</label>
+        <input class="form__input" type="tel" name="tel" id="tel" required value="8 (960) 900-60-90">
+      </fieldset>
+
+      <h2 class="form__subtitle">
+        <label for="about">Комментарий</label>
+      </h2>
+      <textarea class="form__textarea" name="about" id="about">Расскажите обо всех повадках кота</textarea>
+
+      <h2 class="form__subtitle">Дополнительно</h2>
+      <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+      <label class="form__label" for="sweetener">сахарозаменитель</label>
+
+      <input class="form__checkbox" type="checkbox" name="water" id="water">
+      <label class="form__label" for="water">питьевая вода</label>
+
+      <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+      <label class="form__label" for="milk">молоко</label>
+
+      <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+      <label class="form__label" for="vitamins">витамины</label>
+
+      <button class="form__button button button--secondary" type="submit">
+        отправить заявку
+      </button>
+      <span class="form__info">* — Обязательные поля</span>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <h2 class="main-footer__title">приглашаем к сотрудничеству дилеров!</h2>
+    <address class="address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <!--карта-->
+    <!--svg class="main-footer__logo-text-image logo-text-image"-->
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="sotial__link sotial__link--vk" href="#">
+          <!--svg-->
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="sotial__link sotial__link--youtube" href="#">
+          <!--svg-->
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="sotial__link sotial__link--telegram" href="#">
+          <!--svg-->
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+    </ul>
+    <!--svg-->
+  </footer>
+</body>
+
+</html>
