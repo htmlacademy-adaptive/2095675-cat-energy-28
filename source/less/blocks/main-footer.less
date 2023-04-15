@@ -1,10 +1,27 @@
 .main-footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.main-footer__logo-link {
+  margin: auto;
+  grid-column: 1/-1;
+}
+
+.main-footer__social {
+  grid-column: 1/-1;
+  justify-content: center;
 }
 
 .main-footer__htmlacademy-link {
-  font-family: "Lato", sans-serif;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+}
+
+.main-footer__htmlacademy-text {
+  font-family: "Lato", sans-serif;
   color: @basic-grey;
   font-size: 16px;
   line-height: 19px;
