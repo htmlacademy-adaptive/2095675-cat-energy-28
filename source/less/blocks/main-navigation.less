@@ -3,9 +3,25 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+}
 }
 
-.menu-list__link {
-  color: #000000;
-  text-decoration: none;
+.main-navigation__list {
+  .list-reset();
+}
+
+.main-navigation__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

@@ -1,0 +1,19 @@
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.menu-list__link {
+  color: #000000;
+  text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
