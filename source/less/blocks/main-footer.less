@@ -4,13 +4,22 @@
 }
 
 .main-footer__logo-link {
-  margin: auto;
+  justify-self: center;
   grid-column: 1/-1;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+    justify-self: start;
+  }
 }
 
 .main-footer__social {
   grid-column: 1/-1;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/3;
+  }
 }
 
 .main-footer__htmlacademy-link {
@@ -18,6 +27,11 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 3/4;
+    justify-self: end;
+  }
 }
 
 .main-footer__htmlacademy-text {
