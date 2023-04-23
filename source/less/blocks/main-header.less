@@ -1,6 +1,4 @@
 .main-header {
-  padding: 0 20px;
-  width: 280px;
   padding-top: 10px;
 
   @media (min-width: @tablet-width) {
@@ -29,6 +27,8 @@
     justify-content: space-between;
     min-height: 37px;
     margin-bottom: 17px;
+    min-width: 280px;
+    padding: 0 20px;
   }
 }
 
@@ -36,8 +36,20 @@
   background-color: #ffffff;
   border: none;
   position: relative;
-  width: 18px;
+  width: 24px;
   height: 18px;
-  background: url("../img/decor-image/close-menu-icon.svg") no-repeat 50% 50%;
+  background: url("../img/decor-image/mobile-menu-opened.svg") no-repeat 50% 50%;
   align-self: center;
+
+  &--opened {
+    background: url("../img/decor-image/mobile-menu-opened.svg") no-repeat 50% 50%;
+  }
+
+  &--closed {
+    background: url("../img/decor-image/mobile-menu-closed.svg") no-repeat 50% 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

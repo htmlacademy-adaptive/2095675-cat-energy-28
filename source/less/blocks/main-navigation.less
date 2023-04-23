@@ -3,6 +3,8 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  width: auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
@@ -16,12 +18,32 @@
   }
 }
 
-.main-navigation__list {
-  .list-reset();
+.main-navigation--closed {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
-.main-navigation__toggle {
+.main-navigation--opened {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
+
+.main-navigation--nojs {
+  @media (max-width: @mobile-width-only) {
+    position: static;
+    display: block;
+  }
+}
+
+.main-navigation__list {
+  .list-reset();
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
-    display: none;
+    position: static;
   }
 }
