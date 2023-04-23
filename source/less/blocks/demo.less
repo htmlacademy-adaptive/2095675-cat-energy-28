@@ -1,5 +1,22 @@
 .demo {
-  background-color: #EAEAEA;
+  padding: 0 20px;
+  width: 280px;
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+  }
+}
+
+.demo__wraper {
+  background-color: #eaeaea;
+  min-width: 100%;
 }
 
 .demo__title {
